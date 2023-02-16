@@ -11,7 +11,6 @@ const ShowData = ({ datos }) => {
             <p>Email: {email}</p>
             <p>Password: {password}</p>
             <p>Confirm Password: {cfpassword}</p>
-
         </div>
     )
 }

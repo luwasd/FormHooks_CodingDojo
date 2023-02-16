@@ -21,11 +21,14 @@ function App() {
 
     return (
         <>
+            <h1>Formulario</h1>
             <UserForm
                 datos={datos}
                 setDatos={setDatos}
                 limpiar={limpiar}
             />
+            <br />
+            <h2><em>Resultados</em></h2>
             <ShowData
                 datos={datos}
                 setDatos={setDatos}

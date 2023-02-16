@@ -1,16 +1,10 @@
 import React from 'react';
 
 
-const UserForm = ({datos, setDatos, limpiar}) => {
+const UserForm = ({ datos, setDatos, limpiar }) => {
 
 
     const { name, lastname, email, password, cfpassword } = datos;
-
-    /* const createUser = (e) => {
-         e.preventDefault();
-         const newUser = { username, email, password };
-         console.log("Welcome", newUser);
-     };*/
 
     const handleDatos = (e) => {
         setDatos({
@@ -40,7 +34,7 @@ const UserForm = ({datos, setDatos, limpiar}) => {
             <div>
                 <label>Confirm Password: </label>
                 <input value={cfpassword} name="cfpassword" type="password" onChange={handleDatos} />
-            </div><br />
+            </div>
             <button type='button' onClick={limpiar}>Limpiar</button>
         </form>
     );
